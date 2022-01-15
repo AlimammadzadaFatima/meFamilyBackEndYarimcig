@@ -1,0 +1,200 @@
+header nav {
+  position: fixed;
+  overflow: hidden;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+  width: 100%;
+  background-color: white;
+  z-index: 999;
+}
+
+header nav .container .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .container .row .brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #2b3c6f;
+}
+
+header nav .container .row .nav-item .nav-ul {
+  list-style: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header nav .container .row .nav-item .nav-ul li {
+  margin-right: 30px;
+}
+
+header nav .container .row .nav-item .nav-ul li a {
+  text-decoration: none;
+  color: #2b3c6f;
+  font-weight: 500;
+}
+
+header nav .container .row .nav-item .nav-ul li a:hover {
+  color: #0d6efd;
+}
+
+header section {
+  background-color: #f5f7fb;
+  height: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+header section .container .page-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header section .container .page-name p {
+  margin-top: 10px;
+}
+
+header section .container .page-name a:hover {
+  text-decoration: none;
+}
+
+main section {
+  padding: 30px;
+}
+
+main section .container .row {
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+main section .container .row .col-lg-6 .story-text ul {
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+}
+
+main section .container .row .col-lg-6 .image-box img {
+  width: 100%;
+}
+
+main section .container .row .img-box:hover .social-media {
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main section .container .row .user {
+  position: relative;
+}
+
+main section .container .row .user .social-media {
+  position: absolute;
+  width: 100%;
+  background-color: tomato;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 10px 80px;
+  opacity: 0;
+  background-color: rgba(0, 111, 190, 0.8);
+  margin-top: -40px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main section .container .row .user .social-media i {
+  color: white;
+  font-size: 20px;
+}
+
+main section .container .row .user img {
+  width: 100%;
+}
+
+main section .container .row .user .user-text h4 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+main section .container .row .user .user-text span {
+  font-size: 14px;
+  color: #006fbe;
+}
+
+main section .container .row .user .user-text p {
+  color: #777777;
+  font-size: 15px;
+  font-style: italic;
+}
+
+footer {
+  height: 300px;
+  background-color: #1d284b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .container .social-media {
+  text-align: center;
+  padding: 20px;
+}
+
+footer .container .social-media i {
+  color: white;
+  padding: 12px;
+  background-color: #006fbe;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+footer .container .footer-text {
+  color: white;
+  text-align: center;
+}
+
+footer .container .company {
+  color: white;
+  text-align: center;
+}
+
+.container {
+  max-width: 1320px;
+}
+/*# sourceMappingURL=style.css.map */

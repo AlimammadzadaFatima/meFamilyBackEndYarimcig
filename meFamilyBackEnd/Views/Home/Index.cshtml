@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@using meFamilyBackEnd.ViewModels
+@model HomeViewModel 
+@{ int count = 0;}
+<main>
+    @foreach (var item in Model.Stories)
+    { count++;
+        <section>
+            <div class="container">
+                <div class="row story-row @(count%2==0?"":"d-flex flex-row-reverse")">
+                    <div class="col-lg-6">
+                        <div class="story-text">
+                            <h3>
+                               @item.Title
+                            </h3>
+                            <p>@item.Text1</p>
+                            <ul>
+                                <li>@item.Text2</li>
+                              
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="image-box">
+                            <img src="https://bootstrapmade.com/demo/templates/MeFamily/assets/img/intro.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    }
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+                @foreach (var item in Model.Workers)
+                {
+                    <div class="col-lg-4">
+                        <div class="user">
+                            <div class="img-box">
+                                <img src="https://bootstrapmade.com/demo/templates/MeFamily/assets/img/members/member-1.jpg" alt="">
+                                <div class="social-media">
+                                    @foreach (var media in Model.WorkerMedias)
+                                    {
+                                        <a href="@media.Url">@Html.Raw(media.Icon)</a>
+                                    }
+
+
+                                </div>
+                            </div>
+                            <div class="user-text">
+                                <h4>
+                                  @item.Name
+
+                                </h4>
+                                <span>@item.Profession</span>
+                                <p>@item.Text</p>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </section>
+</main>
+ 
